@@ -26,8 +26,8 @@ if ( !defined( 'WPINC' ) ) {
  * @return string	A string consisting of the input string with Arabic numerals replaced with Arabic-Indic numerals
  */
 function convert_arabic_numerals_to_arabic_indic( $string ) {
-	$arabic_numerals = array('۰', '۱', '۲', '۳', '٤', '۵', '٦', '۷', '۸', '۹', ',', '،');
-	$arabic_indic_numerals = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',');
+	$arabic_indic_numerals = array('۰', '۱', '۲', '۳', '٤', '۵', '٦', '۷', '۸', '۹', ',', '،');
+	$arabic_numerals = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',');
 	return str_replace( $arabic_numerals, $arabic_indic_numerals, $string );
 }
 

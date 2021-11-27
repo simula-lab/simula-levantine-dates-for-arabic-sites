@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"X-Generator: Poedit 3.0\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Levantine Dates for Arabic Wordpress"
+msgstr "نسق التاريخ في بلاد الشام لووردبرس العربي"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/simula-lab/levantine-dates-for-arabic-wp"
+msgstr "‫https://github.com/simula-lab/levantine-dates-for-arabic-wp"
+
+#. Description of the plugin/theme
+msgid "Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent"
+msgstr "حول أسماء الأشهر من العربية الحديثة إلى أسماء الأشهر المستخدمة في بلاد الشام، وكذلك حول الأرقام في التواريخ من أرقام عربية إلى أرقام هندية"
+
+#. Author of the plugin/theme
+msgid "SiMULA"
+msgstr "‫SiMULA"
+
+#. Author URI of the plugin/theme
+msgid "https://simulalab.org"
+msgstr "‫https://simulalab.org"

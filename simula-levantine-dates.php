@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/simula-lab/levantine-dates-for-arabic-wp
  * Description: Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent
  * Version: 1.0.0
- * Author: Dr.-Ing. Oussama Jarrousse
+ * Author: SiMULA
  * Author URI: https://simulalab.org/
  * License: GPL2
  * Text Domain: levantine-dates-for-arabic-wp

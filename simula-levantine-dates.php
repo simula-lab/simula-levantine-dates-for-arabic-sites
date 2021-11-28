@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Levantine Dates for Arabic Wordpress
+ * Plugin Name: Levantine Dates for Arabic Sites
  * Plugin URI: https://github.com/simula-lab/levantine-dates-for-arabic-wp
  * Description: Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent
  * Version: 1.0.0

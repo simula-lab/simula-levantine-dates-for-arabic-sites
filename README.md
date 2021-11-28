@@ -1,4 +1,4 @@
-# Levantine Dates for Arabic Wordpress
+# Levantine Dates for Arabic Sites
 Contributors: 
 Tags: arabic, dates, numbers, numerals, levantine,  تقويم، تاريخ، شهور ،أرقام، عربية، هندية
 Requires at least: 1.5
@@ -8,4 +8,4 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## levantine-dates-for-arabic-wp
-Wordpress plugin that changes Modern Standard Arabic month names and Arabic numerals with Levantine month names and Arabic-Indic numerals in WP dates and times
+Wordpress plugin that changes Modern Standard Arabic month names and Arabic numerals with Levantine month names and Arabic-Indic numerals in wordpress dates and times

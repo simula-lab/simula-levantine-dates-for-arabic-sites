@@ -1,5 +1,5 @@
 === Levantine Dates for Arabic Wordpress ===
-Contributors: 
+Contributors: simulalab 
 Tags: arabic, dates, numbers, numerals, levantine,  تقويم، تاريخ، شهور ،أرقام، عربية، هندية
 Requires at least: 1.5
 Tested up to: 5.8.2

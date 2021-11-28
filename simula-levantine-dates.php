@@ -84,6 +84,7 @@ function make_levantine_date( $the_date, $force=null ) {
 if( !is_admin() ){
 	add_filter( 'get_the_time', 'make_levantine_date' );
 	add_filter( 'get_the_date', 'make_levantine_date' );
+	add_filter( 'date_i18n', 'make_levantine_date' );
 }
 
 /**

@@ -153,8 +153,8 @@ add_action( 'init', 'simula_levantine_date_load_textdomain' );
  */
 function simula_levantine_dates_add_admin_menu() {
     add_options_page(
-        'Levantine Dates Settings',
-        'Levantine Dates',
+        __('Levantine Dates Settings', 'levantine-dates-for-arabic-wp' ),
+        __('Levantine Dates', 'levantine-dates-for-arabic-wp' ),
         'manage_options',
         'simula_levantine_dates',
         'simula_levantine_dates_options_page'
@@ -165,7 +165,7 @@ add_action('admin_menu', 'simula_levantine_dates_add_admin_menu');
 function simula_levantine_dates_options_page() {
     ?>
     <div class="wrap">
-    <h2>Levantine Dates Settings</h2>
+    <h2><?php _e('Levantine Dates Settings', 'levantine-dates-for-arabic-wp'); ?></h2>
     <form action="options.php" method="post">
         <?php
         settings_fields('simula_levantine_dates_plugin_options');
@@ -186,14 +186,14 @@ function simula_levantine_dates_options_page() {
 
     add_settings_section(
         'simula_levantine_dates_plugin_section',
-        __('Choose Month Format', 'levantine-dates-for-arabic-wp'),
+        __('Choose months format', 'levantine-dates-for-arabic-wp'),
         'simula_levantine_dates_settings_section_callback',
         'simula_levantine_dates_plugin'
     );
 
     add_settings_field(
         'simula_levantine_dates_field_format',
-        __('Date Format', 'levantine-dates-for-arabic-wp'),
+        __('Month format options', 'levantine-dates-for-arabic-wp'),
         'simula_levantine_dates_field_format_render',
         'simula_levantine_dates_plugin',
         'simula_levantine_dates_plugin_section'
@@ -201,7 +201,7 @@ function simula_levantine_dates_options_page() {
 
 	add_settings_field(
 		'simula_levantine_dates_field_arabic_indic',
-		__('Use Arabic-Indic Numerals', 'levantine-dates-for-arabic-wp'),
+		__('Use Arabic-Indic numerals', 'levantine-dates-for-arabic-wp'),
 		'simula_levantine_dates_field_arabic_indic_render',
 		'simula_levantine_dates_plugin',
 		'simula_levantine_dates_plugin_section'
@@ -211,7 +211,7 @@ function simula_levantine_dates_options_page() {
 add_action('admin_init', 'simula_levantine_dates_settings_init');
 
 function simula_levantine_dates_settings_section_callback() {
-    echo __('Select the format for displaying dates.', 'levantine-dates-for-arabic-wp');
+    echo '<p>' . __('Select the format for displaying months.', 'levantine-dates-for-arabic-wp') . '</p>';
 }
 
 function simula_levantine_dates_field_format_render() {

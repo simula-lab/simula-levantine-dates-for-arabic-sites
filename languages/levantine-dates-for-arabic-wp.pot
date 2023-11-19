@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: xgettext\n"
 
 #. Plugin Name of the plugin/theme
-msgid "Levantine Dates for Arabic Wordpress"
+msgid "Simula Levantine Dates for Arabic Wordpress"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -28,7 +28,7 @@ msgid "Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern 
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "SiMULA"
+msgid "Simula"
 msgstr ""
 
 #. Author URI of the plugin/theme

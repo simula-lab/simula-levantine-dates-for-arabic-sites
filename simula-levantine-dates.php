@@ -55,15 +55,15 @@ function simula_levantine_dates_convert_month_names( $string, $source, $target )
 
 // Modify the existing functions to use the new generic function
 function simula_levantine_dates_convert_msa_month_names_to_levantine_month_names( $string ) {
-    return convert_month_names( $string, SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES, SIMULA_LEVANTINE_DATES_LEVANTINE_MONTH_NAMES );
+    return simula_levantine_dates_convert_month_names( $string, SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES, SIMULA_LEVANTINE_DATES_LEVANTINE_MONTH_NAMES );
 }
 
 function simula_levantine_dates_convert_msa_month_names_to_levantine_msa_month_names( $string ) {
-    return convert_month_names( $string, SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES, SIMULA_LEVANTINE_DATES_LEVANTINE_MSA_MONTH_NAMES );
+    return simula_levantine_dates_convert_month_names( $string, SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES, SIMULA_LEVANTINE_DATES_LEVANTINE_MSA_MONTH_NAMES );
 }
 
 function simula_levantine_dates_convert_msa_month_names_to_msa_levantine_month_names( $string ) {
-    return convert_month_names( $string, SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES, SIMULA_LEVANTINE_DATES_MSA_LEVANTINE_MONTH_NAMES );
+    return simula_levantine_dates_convert_month_names( $string, SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES, SIMULA_LEVANTINE_DATES_MSA_LEVANTINE_MONTH_NAMES );
 }
 
 /**

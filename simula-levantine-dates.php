@@ -227,10 +227,18 @@ function simula_levantine_dates_field_format_render() {
     $options = get_option('simula_levantine_dates_settings');
     ?>
     <select name="simula_levantine_dates_settings[simula_levantine_dates_field_format]">
-        <option value="no_change" <?php selected($options['simula_levantine_dates_field_format'], 'no_change'); ?>>No Change</option>
-        <option value="levantine" <?php selected($options['simula_levantine_dates_field_format'], 'levantine'); ?>>Levantine</option>
-        <option value="levantine_msa" <?php selected($options['simula_levantine_dates_field_format'], 'levantine_msa'); ?>>Levantine/MSA</option>
-        <option value="msa_levantine" <?php selected($options['simula_levantine_dates_field_format'], 'msa_levantine'); ?>>MSA/Levantine</option>
+        <option value="no_change" <?php selected($options['simula_levantine_dates_field_format'], 'no_change'); ?>>
+            <?php _e('No Change', 'simula-levantine-dates-for-arabic-wp'); ?>
+        </option>
+        <option value="levantine" <?php selected($options['simula_levantine_dates_field_format'], 'levantine'); ?>>
+        <?php _e('Levantine', 'simula-levantine-dates-for-arabic-wp'); ?>
+        </option>
+        <option value="levantine_msa" <?php selected($options['simula_levantine_dates_field_format'], 'levantine_msa'); ?>>
+            <?php _e('Levantine/MSA', 'simula-levantine-dates-for-arabic-wp'); ?>
+        </option>
+        <option value="msa_levantine" <?php selected($options['simula_levantine_dates_field_format'], 'msa_levantine'); ?>>
+            <?php _e('MSA/Levantine', 'simula-levantine-dates-for-arabic-wp'); ?>
+        </option>
     </select>
     <?php
 }

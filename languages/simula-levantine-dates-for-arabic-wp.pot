@@ -19,10 +19,6 @@ msgstr ""
 msgid "Simula Levantine Dates for Arabic Wordpress"
 msgstr ""
 
-#. Plugin URI of the plugin/theme
-msgid "https://github.com/simula-lab/levantine-dates-for-arabic-wp"
-msgstr ""
-
 #. Description of the plugin/theme
 msgid "Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent"
 msgstr ""
@@ -70,4 +66,20 @@ msgstr ""
 
 #: simula-levantine-dates.php:223
 msgid "Select the format for displaying months."
+msgstr ""
+
+#: simula-levantine-dates.php:231
+msgid "No Change"
+msgstr ""
+
+#: simula-levantine-dates.php:234
+msgid "Levantine"
+msgstr ""
+
+#: simula-levantine-dates.php:237
+msgid "Levantine/MSA"
+msgstr ""
+
+#: simula-levantine-dates.php:240
+msgid "MSA/Levantine"
 msgstr ""

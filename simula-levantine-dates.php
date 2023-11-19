@@ -1,7 +1,8 @@
 <?php
 /**
- * Plugin Name: Levantine Dates for Arabic Sites
- * Plugin URI: https://gitlab.com/simulalab/wordpress/plugins/levantine-dates-for-arabic-sites
+ * Plugin Name: Simula Levantine Dates for Arabic Sites
+ * Plugin URI: https://github.com/simula-lab/simula-levantine-dates-for-arabic-sites
+
  * Description: Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent
  * Version: 1.0.0
  * Author: Simula
@@ -102,13 +103,13 @@ function simula_levantine_dates_make_levantine_date( $the_date, $force=null ) {
 		}
 		switch ($format) {
             case 'levantine':
-                $the_date = convert_msa_month_names_to_levantine_month_names( $the_date );
+                $the_date = simula_levantine_dates_convert_msa_month_names_to_levantine_month_names( $the_date );
                 break;
             case 'levantine_msa':
-                $the_date = convert_msa_month_names_to_levantine_msa_month_names( $the_date );
+                $the_date = simula_levantine_dates_convert_msa_month_names_to_levantine_msa_month_names( $the_date );
                 break;
             case 'msa_levantine':
-                $the_date = convert_msa_month_names_to_msa_levantine_month_names( $the_date );
+                $the_date = simula_levantine_dates_convert_msa_month_names_to_msa_levantine_month_names( $the_date );
                 break;
         }
 	}

@@ -39,18 +39,30 @@ msgstr "إعدادات إضافة نسق التاريخ في بلاد الشام
 msgid "Levantine Dates"
 msgstr "نسق التاريخ في بلاد الشام"
 
-#: simula-levantine-dates.php:189
+#: simula-levantine-dates.php:177
+msgid "This plugin is brought to you by Simula."
+msgstr "هذه الإضافة من إنتاج شركة "
+
+#: simula-levantine-dates.php:178
+msgid "Visit us at "
+msgstr "زورونا على الموقع "
+
+#: simula-levantine-dates.php:182
+msgid "to learn more about what we do!"
+msgstr "كي تعرفوا المزيد حول شركتنا"
+
+#: simula-levantine-dates.php:198
 msgid "Choose months format"
 msgstr "اختر نسق الشهور"
 
-#: simula-levantine-dates.php:196
+#: simula-levantine-dates.php:205
 msgid "Month format options"
 msgstr "خيارات نسق الشهور"
 
-#: simula-levantine-dates.php:204
+#: simula-levantine-dates.php:213
 msgid "Use Arabic-Indic numerals"
 msgstr "استخدم الأرقام الهندية"
 
-#: simula-levantine-dates.php:214
+#: simula-levantine-dates.php:223
 msgid "Select the format for displaying months."
 msgstr "اختر نسق الشهور المناسب."

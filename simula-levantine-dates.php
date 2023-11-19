@@ -172,6 +172,15 @@ function simula_levantine_dates_options_page() {
         do_settings_sections('simula_levantine_dates_plugin');
         submit_button();
         ?>
+        <!-- Add your promotional paragraph here -->
+        <p>
+            <?php _e('This plugin is brought to you by Simula.', 'levantine-dates-for-arabic-wp'); ?>
+            <?php _e('Visit us at ', 'levantine-dates-for-arabic-wp'); ?>
+            <a href="https://simulalab.org" target="_blank">
+                <?php _e('https://simulalab.org', 'levantine-dates-for-arabic-wp'); ?>
+            </a>
+            <?php _e('to learn more about what we do!', 'levantine-dates-for-arabic-wp'); ?>
+        </p>
     </form>
     </div>
     <?php

@@ -17,6 +17,54 @@ if ( !defined( 'WPINC' ) ) {
 	die;
 }
 
+// Define the arrays of month names as constants
+const MODERN_STANDARD_ARABIC_MONTH_NAMES = array(
+    'يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 
+    'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'
+);
+
+const LEVANTINE_MONTH_NAMES = array(
+    'كانون الثاني', 'شباط', 'آذار', 'نيسان', 'أيار', 'حزيران', 
+    'تموز', 'آب', 'أيلول', 'تشرين الأول', 'تشرين الثاني', 'كانون الأول'
+);
+
+const LEVANTINE_MSA_MONTH_NAMES = array(
+    'كانون الثاني/يناير', 'شباط/فبراير', 'آذار/مارس', 'نيسان/أبريل', 'أيار/مايو', 'حزيران/يونيو', 
+    'تموز/يوليو', 'آب/أغسطس', 'أيلول/سبتمبر', 'تشرين الأول/أكتوبر', 'تشرين الثاني/نوفمبر', 'كانون الأول/ديسمبر'
+);
+
+
+const MSA_LEVANTINE_MONTH_NAMES = array(
+    'يناير/كانون الثاني', 'فبراير/شباط', 'مارس/آذار', 'أبريل/نيسان', 'مايو/أيار', 'يونيو/حزيران', 
+    'يوليو/تموز', 'أغسطس/آب', 'سبتمبر/أيلول', 'أكتوبر/تشرين الأول', 'نوفمبر/تشرين الثاني', 'ديسمبر/كانون الأول'
+);
+
+/**
+ * Generic function to convert month names
+ *
+ * @param string $string The string containing dates
+ * @param array $source The source array of month names
+ * @param array $target The target array of month names for conversion
+ * @return string The string with month names converted
+ */
+function convert_month_names( $string, $source, $target ) {
+    return str_replace( $source, $target, $string );
+}
+
+
+// Modify the existing functions to use the new generic function
+function convert_msa_month_names_to_levantine_month_names( $string ) {
+    return convert_month_names( $string, MODERN_STANDARD_ARABIC_MONTH_NAMES, LEVANTINE_MONTH_NAMES );
+}
+
+function convert_msa_month_names_to_levantine_msa_month_names( $string ) {
+    return convert_month_names( $string, MODERN_STANDARD_ARABIC_MONTH_NAMES, LEVANTINE_MSA_MONTH_NAMES );
+}
+
+function convert_msa_month_names_to_msa_levantine_month_names( $string ) {
+    return convert_month_names( $string, MODERN_STANDARD_ARABIC_MONTH_NAMES, MSA_LEVANTINE_MONTH_NAMES );
+}
+
 /**
  * Replaces Arabic numerals with Arabic-Indic numberals in given string.
  *
@@ -31,37 +79,6 @@ function convert_arabic_numerals_to_arabic_indic( $string ) {
 	return str_replace( $arabic_numerals, $arabic_indic_numerals, $string );
 }
 
-function convert_msa_month_names_to_levantine_month_names( $string ) {
-	$modern_standard_arabic_month_names = array(
-		'يناير',
-		'فبراير',
-		'مارس',
-		'أبريل',
-		'مايو',
-		'يونيو',
-		'يوليو',
-		'أغسطس',
-		'سبتمبر',
-		'أكتوبر',
-		'نوفمبر',
-		'ديسمبر'
-	);
-	$levantine_month_names = array(
-		'كانون الثاني',
-		'شباط',
-		'آذار',
-		'نيسان',
-		'أيار',
-		'حزيران',
-		'تموز',
-		'آب',
-		'أيلول',
-		'تشرين الأول',
-		'تشرين الثاني',
-		'كانون الأول'
-	);
-	return str_replace( $modern_standard_arabic_month_names, $levantine_month_names, $string );	
-}
 
 /**
  * If the blog language is Arabic, hook into date and time functions
@@ -74,9 +91,26 @@ function convert_msa_month_names_to_levantine_month_names( $string ) {
  * @return string	The date with Arabic-Indic numerals and Levantine month names
  */
 function make_levantine_date( $the_date, $force=null ) {
+
+	$options = get_option('simula_levantine_dates_settings');
+    $format = isset($options['simula_levantine_dates_field_format']) ? $options['simula_levantine_dates_field_format'] : 'levantine';
+	$use_arabic_indic_numerals = isset($options['simula_levantine_dates_field_arabic_indic']) && $options['simula_levantine_dates_field_arabic_indic'];
+
 	if ( get_bloginfo( 'language' ) == 'ar' || $force ) {
-		$the_date = convert_arabic_numerals_to_arabic_indic( $the_date );
-		$the_date = convert_msa_month_names_to_levantine_month_names( $the_date );
+		if ( $use_arabic_indic_numerals ){
+			$the_date = convert_arabic_numerals_to_arabic_indic( $the_date );
+		}
+		switch ($format) {
+            case 'levantine':
+                $the_date = convert_msa_month_names_to_levantine_month_names( $the_date );
+                break;
+            case 'levantine_msa':
+                $the_date = convert_msa_month_names_to_levantine_msa_month_names( $the_date );
+                break;
+            case 'msa_levantine':
+                $the_date = convert_msa_month_names_to_msa_levantine_month_names( $the_date );
+                break;
+        }
 	}
 	return $the_date;
 }
@@ -112,4 +146,91 @@ function simula_levantine_date_load_textdomain() {
 }
 
 add_action( 'init', 'simula_levantine_date_load_textdomain' );
+
+
+/**
+ * Create the Options Page
+ */
+function simula_levantine_dates_add_admin_menu() {
+    add_options_page(
+        'Levantine Dates Settings',
+        'Levantine Dates',
+        'manage_options',
+        'simula_levantine_dates',
+        'simula_levantine_dates_options_page'
+    );
+}
+add_action('admin_menu', 'simula_levantine_dates_add_admin_menu');
+
+function simula_levantine_dates_options_page() {
+    ?>
+    <div class="wrap">
+    <h2>Levantine Dates Settings</h2>
+    <form action="options.php" method="post">
+        <?php
+        settings_fields('simula_levantine_dates_plugin_options');
+        do_settings_sections('simula_levantine_dates_plugin');
+        submit_button();
+        ?>
+    </form>
+    </div>
+    <?php
+}
+
+/**
+ * Register Settings
+ */
+
+ function simula_levantine_dates_settings_init() {
+    register_setting('simula_levantine_dates_plugin_options', 'simula_levantine_dates_settings');
+
+    add_settings_section(
+        'simula_levantine_dates_plugin_section',
+        __('Choose Month Format', 'levantine-dates-for-arabic-wp'),
+        'simula_levantine_dates_settings_section_callback',
+        'simula_levantine_dates_plugin'
+    );
+
+    add_settings_field(
+        'simula_levantine_dates_field_format',
+        __('Date Format', 'levantine-dates-for-arabic-wp'),
+        'simula_levantine_dates_field_format_render',
+        'simula_levantine_dates_plugin',
+        'simula_levantine_dates_plugin_section'
+    );
+
+	add_settings_field(
+		'simula_levantine_dates_field_arabic_indic',
+		__('Use Arabic-Indic Numerals', 'levantine-dates-for-arabic-wp'),
+		'simula_levantine_dates_field_arabic_indic_render',
+		'simula_levantine_dates_plugin',
+		'simula_levantine_dates_plugin_section'
+	);	
+}
+
+add_action('admin_init', 'simula_levantine_dates_settings_init');
+
+function simula_levantine_dates_settings_section_callback() {
+    echo __('Select the format for displaying dates.', 'levantine-dates-for-arabic-wp');
+}
+
+function simula_levantine_dates_field_format_render() {
+    $options = get_option('simula_levantine_dates_settings');
+    ?>
+    <select name="simula_levantine_dates_settings[simula_levantine_dates_field_format]">
+        <option value="no_change" <?php selected($options['simula_levantine_dates_field_format'], 'no_change'); ?>>No Change</option>
+        <option value="levantine" <?php selected($options['simula_levantine_dates_field_format'], 'levantine'); ?>>Levantine</option>
+        <option value="levantine_msa" <?php selected($options['simula_levantine_dates_field_format'], 'levantine_msa'); ?>>Levantine/MSA</option>
+        <option value="msa_levantine" <?php selected($options['simula_levantine_dates_field_format'], 'msa_levantine'); ?>>MSA/Levantine</option>
+    </select>
+    <?php
+}
+
+function simula_levantine_dates_field_arabic_indic_render() {
+    $options = get_option('simula_levantine_dates_settings');
+    ?>
+    <input type='checkbox' name='simula_levantine_dates_settings[simula_levantine_dates_field_arabic_indic]' <?php checked(isset($options['simula_levantine_dates_field_arabic_indic']) && $options['simula_levantine_dates_field_arabic_indic']); ?> value='1'>
+    <?php
+}
+
 ?>

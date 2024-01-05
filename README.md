@@ -8,9 +8,9 @@ A Wordpress plugin developed by [Simula Lab Ltd](https://simulalab.org) that giv
 
 ## Features
 
-- Use Arabic-Indic numeral (١, ٢, ٣) instead of Arabic numerals (1, 2, 3) in Wordpress dates and times
-- Use Levantine Arabic months names instead (شباط, آذار) of Modern Standard Arabic months names (فبراير, مارس) in Wordpress dates
-- Use a mix of Levantine and Standard Arabic months names (شباط/فبراير, آذار/مارس) or (فبراير/شباط, مارس/آذار) instead of Modern Standard Arabic months names
+- Use Arabic-Indic numeral (١, ٢, ٣) instead of Arabic numerals (1, 2, 3) in Wordpress dates and times.
+- Use Levantine Arabic months names instead (شباط, آذار) of Modern Standard Arabic months names (فبراير, مارس) in Wordpress dates.
+- Use a mix of Levantine and Standard Arabic months names (شباط/فبراير, آذار/مارس) or (فبراير/شباط, مارس/آذار) instead of Modern Standard Arabic months names.
 
 ## Installation
 
@@ -24,8 +24,7 @@ Login as an admin, navigate to "Plugins" then click the "Add new plugin" button.
 Then click on "Upload Plugin", and upload the zip file, then click "Install Now"
 
 
-Activate the plugin upon successful installation
-
+Activate the plugin upon successful installation.
 
 ## Usage
 
@@ -41,9 +40,22 @@ Click "Save"
 
 Make sure the desired effect can be observed in the format of dates and times of pages and posts and other wordpress elements.
 
+## Example
+
+Compare the "تم النشر في" of the following screenshots:
+
+Before selecting Levantine Arabic month names and Arabic-Indic numerals:
+
+<img src="screenshot-1.png" alt="example" width="400"/>
+
+After selecting Levantine Arabic month names and Arabic-Indic numberals:
+
+<img src="screenshot-2.png" alt="example" width="400"/>
+
 ## Reporting bugs
 
-Please create issues here, and try to be thourough
+Please create an issue for the bug, and try to be thourough. 
+If possible include screenshots, and other important details such as wordpress version, php version, etc.
 
 ## Contributing
 Contributions are welcome!
@@ -66,4 +78,4 @@ Checklist
 ```
 
 ## License
-The plugin was developed by Simula Lab Ltd. https://simulalab.org under the GPL-2.0 license: http://www.gnu.org/licenses/gpl-2.0.html
+The plugin was developed under the GPL-2.0 license: http://www.gnu.org/licenses/gpl-2.0.html.

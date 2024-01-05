@@ -2,7 +2,7 @@
 Contributors: 
 Tags: arabic, dates, numbers, numerals, levantine,  تقويم، تاريخ، شهور ،أرقام، عربية، هندية
 Requires at least: 1.5
-Tested up to: 5.8.2
+Tested up to: 6.4
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

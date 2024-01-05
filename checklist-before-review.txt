@@ -1,0 +1,8 @@
+- make sure the readme.txt is similar to https://wordpress.org/plugins/readme.txt
+- make sure the readme.txt has up to date information
+- use the readme validator https://wordpress.org/plugins/developers/readme-validator/
+- make sure "Tested up to" in readme.txt has the current major version of WP
+- make sure files in the assets folder are named correctly
+- make sure all functions that echo are escaped replace _e() with html_esc_e() and __() with html_esc__() or other suitable escape functions as described in https://developer.wordpress.org/apis/security/escaping/
+- make sure you are following the steps in https://wordpress.org/plugins/developers/
+- read the FAQ https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/

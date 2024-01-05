@@ -1,8 +1,10 @@
 # Simula Levantine Dates for Arabic Sites
 
+![License](https://img.shields.io/badge/license-GPLv2-blue.svg)
+
 ## Overview
 
-A Wordpress plugin that gives the Arabic site admin the possibility to use Levantine Arabic Month Names in wordpress dates instead of (or in combination with) Modern Standard Arabic month names. It also allows for using Arabic-Indic numerals instead of Arabic numerals in wordpress dates and time.
+A Wordpress plugin developed by [Simula Lab Ltd](https://simulalab.org) that gives the Arabic site admin the possibility to use Levantine Arabic Month Names in wordpress dates instead of (or in combination with) Modern Standard Arabic month names. It also allows for using Arabic-Indic numerals instead of Arabic numerals in wordpress dates and time.
 
 ## Features
 

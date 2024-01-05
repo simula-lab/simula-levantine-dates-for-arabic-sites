@@ -4,12 +4,12 @@
 
 ## Overview
 
-A Wordpress plugin developed by [Simula Lab Ltd](https://simulalab.org) that gives the Arabic site admin the possibility to use Levantine Arabic Month Names in wordpress dates instead of (or in combination with) Modern Standard Arabic month names. It also allows for using Arabic-Indic numerals instead of Arabic numerals in wordpress dates and time.
+A WordPress plugin developed by [Simula Lab Ltd](https://simulalab.org) that gives the Arabic site admin the possibility to use Levantine Arabic Month Names in WordPress dates instead of (or in combination with) Modern Standard Arabic month names. It also allows for using Arabic-Indic numerals instead of Arabic numerals in WordPress dates and time.
 
 ## Features
 
-- Use Arabic-Indic numeral (١, ٢, ٣) instead of Arabic numerals (1, 2, 3) in Wordpress dates and times.
-- Use Levantine Arabic months names instead (شباط, آذار) of Modern Standard Arabic months names (فبراير, مارس) in Wordpress dates.
+- Use Arabic-Indic numeral (١, ٢, ٣) instead of Arabic numerals (1, 2, 3) in WordPress dates and times.
+- Use Levantine Arabic months names instead (شباط, آذار) of Modern Standard Arabic months names (فبراير, مارس) in WordPress dates.
 - Use a mix of Levantine and Standard Arabic months names (شباط/فبراير, آذار/مارس) or (فبراير/شباط, مارس/آذار) instead of Modern Standard Arabic months names.
 
 ## Installation
@@ -38,7 +38,7 @@ Check/Uncheck the "استخدم الأرقام الهندية"
 
 Click "Save"
 
-Make sure the desired effect can be observed in the format of dates and times of pages and posts and other wordpress elements.
+Make sure the desired effect can be observed in the format of dates and times of pages and posts and other site elements.
 
 ## Example
 
@@ -46,16 +46,16 @@ Compare the "تم النشر في" of the following screenshots:
 
 Before selecting Levantine Arabic month names and Arabic-Indic numerals:
 
-<img src="screenshot-1.png" alt="example" width="400"/>
+<img src="assets/screenshot-1.png" alt="example" width="400"/>
 
 After selecting Levantine Arabic month names and Arabic-Indic numberals:
 
-<img src="screenshot-2.png" alt="example" width="400"/>
+<img src="assets/screenshot-2.png" alt="example" width="400"/>
 
 ## Reporting bugs
 
 Please create an issue for the bug, and try to be thourough. 
-If possible include screenshots, and other important details such as wordpress version, php version, etc.
+If possible include screenshots, and other important details such as WordPress version, PHP version, etc.
 
 ## Contributing
 Contributions are welcome!

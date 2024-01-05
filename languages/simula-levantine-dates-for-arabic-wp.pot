@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: xgettext\n"
 
 #. Plugin Name of the plugin/theme
-msgid "Simula Levantine Dates for Arabic Wordpress"
+msgid "Simula Levantine Dates for Arabic Sites"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

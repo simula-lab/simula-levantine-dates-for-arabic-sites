@@ -6,3 +6,5 @@
 - make sure all functions that echo are escaped replace _e() with html_esc_e() and __() with html_esc__() or other suitable escape functions as described in https://developer.wordpress.org/apis/security/escaping/
 - make sure you are following the steps in https://wordpress.org/plugins/developers/
 - read the FAQ https://developer.wordpress.org/plugins/wordpress-org/plugin-developer-faq/
+- test the plugin after zipping
+- 

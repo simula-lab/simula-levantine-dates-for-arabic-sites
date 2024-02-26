@@ -1,84 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: simula-levantine-dates\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-19 17:03+0100\n"
 "PO-Revision-Date: 2023-11-19 17:03+0100\n"
-"Last-Translator: 2023-11-19 17:03+0100\n"
-"Language-Team: Simula\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ar\n"
 "X-Generator: xgettext\n"
 
 #. Plugin Name of the plugin/theme
 msgid "Simula Levantine Dates for Arabic Sites"
-msgstr "نسق التاريخ في بلاد الشام لووردبرس العربي من ‫Simula"
+msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/simula-lab/levantine-dates-for-arabic-wp"
-msgstr "‫https://github.com/simula-lab/levantine-dates-for-arabic-wp"
+msgid "https://github.com/simula-lab/simula-levantine-dates-for-arabic-sites"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid "Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent"
-msgstr "حول أسماء الأشهر من العربية الحديثة إلى أسماء الأشهر المستخدمة في بلاد الشام، وكذلك حول الأرقام في التواريخ من أرقام عربية إلى أرقام هندية"
+msgstr ""
 
 #. Author of the plugin/theme
 msgid "Simula"
-msgstr "‫Simula"
+msgstr ""
 
 #. Author URI of the plugin/theme
+#: simula-levantine-dates.php:180
 msgid "https://simulalab.org"
-msgstr "‫https://simulalab.org"
+msgstr ""
 
 #: simula-levantine-dates.php:156 simula-levantine-dates.php:168
 msgid "Levantine Dates Settings"
-msgstr "إعدادات إضافة نسق التاريخ في بلاد الشام "
+msgstr ""
 
 #: simula-levantine-dates.php:157
 msgid "Levantine Dates"
-msgstr "نسق التاريخ في بلاد الشام"
+msgstr ""
 
 #: simula-levantine-dates.php:177
 msgid "This plugin is brought to you by Simula."
-msgstr "هذه الإضافة من إنتاج شركة "
+msgstr ""
 
 #: simula-levantine-dates.php:178
 msgid "Visit us at "
-msgstr "زورونا على الموقع "
+msgstr ""
 
 #: simula-levantine-dates.php:182
 msgid "to learn more about what we do!"
-msgstr "كي تعرفوا المزيد حول شركتنا"
+msgstr ""
 
 #: simula-levantine-dates.php:198
 msgid "Choose months format"
-msgstr "اختر نسق الشهور"
+msgstr ""
 
 #: simula-levantine-dates.php:205
 msgid "Month format options"
-msgstr "خيارات نسق الشهور"
+msgstr ""
 
 #: simula-levantine-dates.php:213
 msgid "Use Arabic-Indic numerals"
-msgstr "استخدم الأرقام الهندية"
+msgstr ""
 
 #: simula-levantine-dates.php:223
 msgid "Select the format for displaying months."
-msgstr "اختر نسق الشهور المناسب."
+msgstr ""
 
 #: simula-levantine-dates.php:231
 msgid "No Change"
-msgstr "لا تغيير"
+msgstr ""
 
 #: simula-levantine-dates.php:234
 msgid "Levantine"
-msgstr "شباط"
+msgstr ""
 
 #: simula-levantine-dates.php:237
 msgid "Levantine/MSA"
-msgstr "شباط/فبراير"
+msgstr ""
 
 #: simula-levantine-dates.php:240
 msgid "MSA/Levantine"
-msgstr "فبراير/شباط"
+msgstr ""

@@ -8,7 +8,7 @@
  * Author: Simula
  * Author URI: https://simulalab.org/
  * License: GPL2
- * Text Domain: simula-levantine-dates-for-arabic-wp
+ * Text Domain: simula-levantine-dates-for-arabic-sites
  * Domain Path: /languages
  *
  */
@@ -143,7 +143,7 @@ add_shortcode( 'levantine_date', 'simula_levantine_dates_shortcode' );
  * @since 1.0.0
  */
 function simula_levantine_dates_load_textdomain() {
-  load_plugin_textdomain( 'simula-levantine-dates-for-arabic-wp', false, basename( dirname( __FILE__ ) ) . '/languages' );
+  load_plugin_textdomain( 'simula-levantine-dates-for-arabic-sites', false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'init', 'simula_levantine_dates_load_textdomain' );
@@ -154,8 +154,8 @@ add_action( 'init', 'simula_levantine_dates_load_textdomain' );
  */
 function simula_levantine_dates_add_admin_menu() {
     add_options_page(
-        esc_html__('Levantine Dates Settings', 'simula-levantine-dates-for-arabic-wp' ),
-        esc_html__('Levantine Dates', 'simula-levantine-dates-for-arabic-wp' ),
+        esc_html__('Levantine Dates Settings', 'simula-levantine-dates-for-arabic-sites' ),
+        esc_html__('Levantine Dates', 'simula-levantine-dates-for-arabic-sites' ),
         'manage_options',
         'simula_levantine_dates',
         'simula_levantine_dates_options_page'
@@ -166,7 +166,7 @@ add_action('admin_menu', 'simula_levantine_dates_add_admin_menu');
 function simula_levantine_dates_options_page() {
     ?>
     <div class="wrap">
-    <h2><?php esc_html_e('Levantine Dates Settings', 'simula-levantine-dates-for-arabic-wp'); ?></h2>
+    <h2><?php esc_html_e('Levantine Dates Settings', 'simula-levantine-dates-for-arabic-sites'); ?></h2>
     <form action="options.php" method="post">
         <?php
         settings_fields('simula_levantine_dates_plugin_options');
@@ -175,12 +175,12 @@ function simula_levantine_dates_options_page() {
         ?>
         <!-- Add your promotional paragraph here -->
         <p>
-            <?php esc_html_e('This plugin is brought to you by Simula.', 'simula-levantine-dates-for-arabic-wp'); ?>
-            <?php esc_html_e('Visit us at ', 'simula-levantine-dates-for-arabic-wp'); ?>
+            <?php esc_html_e('This plugin is brought to you by Simula.', 'simula-levantine-dates-for-arabic-sites'); ?>
+            <?php esc_html_e('Visit us at ', 'simula-levantine-dates-for-arabic-sites'); ?>
             <a href="https://simulalab.org" target="_blank">
-                <?php esc_html_e('https://simulalab.org', 'simula-levantine-dates-for-arabic-wp'); ?>
+                <?php esc_html_e('https://simulalab.org', 'simula-levantine-dates-for-arabic-sites'); ?>
             </a>
-            <?php esc_html_e('to learn more about what we do!', 'simula-levantine-dates-for-arabic-wp'); ?>
+            <?php esc_html_e('to learn more about what we do!', 'simula-levantine-dates-for-arabic-sites'); ?>
         </p>
     </form>
     </div>
@@ -196,14 +196,14 @@ function simula_levantine_dates_options_page() {
 
     add_settings_section(
         'simula_levantine_dates_plugin_section',
-        esc_html__('Choose months format', 'simula-levantine-dates-for-arabic-wp'),
+        esc_html__('Choose months format', 'simula-levantine-dates-for-arabic-sites'),
         'simula_levantine_dates_settings_section_callback',
         'simula_levantine_dates_plugin'
     );
 
     add_settings_field(
         'simula_levantine_dates_field_format',
-        esc_html__('Month format options', 'simula-levantine-dates-for-arabic-wp'),
+        esc_html__('Month format options', 'simula-levantine-dates-for-arabic-sites'),
         'simula_levantine_dates_field_format_render',
         'simula_levantine_dates_plugin',
         'simula_levantine_dates_plugin_section'
@@ -211,7 +211,7 @@ function simula_levantine_dates_options_page() {
 
 	add_settings_field(
 		'simula_levantine_dates_field_arabic_indic',
-		esc_html__('Use Arabic-Indic numerals', 'simula-levantine-dates-for-arabic-wp'),
+		esc_html__('Use Arabic-Indic numerals', 'simula-levantine-dates-for-arabic-sites'),
 		'simula_levantine_dates_field_arabic_indic_render',
 		'simula_levantine_dates_plugin',
 		'simula_levantine_dates_plugin_section'
@@ -221,7 +221,7 @@ function simula_levantine_dates_options_page() {
 add_action('admin_init', 'simula_levantine_dates_settings_init');
 
 function simula_levantine_dates_settings_section_callback() {
-    echo '<p>' . esc_html__('Select the format for displaying months.', 'simula-levantine-dates-for-arabic-wp') . '</p>';
+    echo '<p>' . esc_html__('Select the format for displaying months.', 'simula-levantine-dates-for-arabic-sites') . '</p>';
 }
 
 function simula_levantine_dates_field_format_render() {
@@ -229,16 +229,16 @@ function simula_levantine_dates_field_format_render() {
     ?>
     <select name="simula_levantine_dates_settings[simula_levantine_dates_field_format]">
         <option value="no_change" <?php selected($options['simula_levantine_dates_field_format'], 'no_change'); ?>>
-            <?php esc_html_e('No Change', 'simula-levantine-dates-for-arabic-wp'); ?>
+            <?php esc_html_e('No Change', 'simula-levantine-dates-for-arabic-sites'); ?>
         </option>
         <option value="levantine" <?php selected($options['simula_levantine_dates_field_format'], 'levantine'); ?>>
-        <?php esc_html_e('Levantine', 'simula-levantine-dates-for-arabic-wp'); ?>
+        <?php esc_html_e('Levantine', 'simula-levantine-dates-for-arabic-sites'); ?>
         </option>
         <option value="levantine_msa" <?php selected($options['simula_levantine_dates_field_format'], 'levantine_msa'); ?>>
-            <?php esc_html_e('Levantine/MSA', 'simula-levantine-dates-for-arabic-wp'); ?>
+            <?php esc_html_e('Levantine/MSA', 'simula-levantine-dates-for-arabic-sites'); ?>
         </option>
         <option value="msa_levantine" <?php selected($options['simula_levantine_dates_field_format'], 'msa_levantine'); ?>>
-            <?php esc_html_e('MSA/Levantine', 'simula-levantine-dates-for-arabic-wp'); ?>
+            <?php esc_html_e('MSA/Levantine', 'simula-levantine-dates-for-arabic-sites'); ?>
         </option>
     </select>
     <?php

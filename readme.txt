@@ -1,16 +1,15 @@
 === Simula Levantine Dates for Arabic Sites ===
 Contributors: simulalab 
-Tags: arabic, dates, numbers, numerals, levantine,  تقويم، تاريخ، شهور ،أرقام، عربية، هندية
-Requires at least: 1.5
+Tags: arabic, numerals, levantine, تاريخ ,أرقام
+Requires at least: 4.6
 Tested up to: 6.4
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://simulalab.org
 
-# simula-levantine-dates-for-arabic-wp
-WordPress plugin that changes Modern Standard Arabic month names and Arabic numerals with Levantine month names and Arabic-Indic numerals in WP dates and times
+A plugin that add options to use Arabic-Indic numerals, and Levantine months names in dates and times to Arabic WordPress sites.
 
 == Description ==
 
@@ -29,6 +28,11 @@ It allows the site to:
 2. ٍPublishing data/time using Levantine Arabic month names and Arabic-Indic numerals
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed Text Domain for the plugin allowing for collaborative translation on the wordpress.org platform
+* Bumped at least required version to 4.6 to allow for collaborative translation on the wordpress.org platform
+* Fixed the short description and tags of the readme.txt
 
 = 1.0 =
 * This is the first version

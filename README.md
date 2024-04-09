@@ -77,5 +77,15 @@ Checklist
   [ ] PR is ready for review
 ```
 
+## Upgrade on Wordpress.org Directory
+
+- update the plugin code
+- test your changes 
+- update version number in readme.txt and meta data
+- git commit changes to this repository
+- use svn to checkout the SVN repository
+- add changes to /trunk/ and to /tags/{{major.minor.patch}}/
+- svn commit changes to plugins directory
+
 ## License
 The plugin was developed under the GPL-2.0 license: http://www.gnu.org/licenses/gpl-2.0.html.

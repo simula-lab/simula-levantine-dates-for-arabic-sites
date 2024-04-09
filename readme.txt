@@ -2,7 +2,7 @@
 Contributors: simulalab 
 Tags: arabic, numerals, levantine, تاريخ ,أرقام
 Requires at least: 4.6
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.0
 Stable tag: 1.0.1
 License: GPLv2

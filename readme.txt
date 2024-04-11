@@ -13,7 +13,7 @@ A plugin that add options to use Arabic-Indic numerals, and Levantine months nam
 
 == Description ==
 
-A WordPress plugin developed by [Simula Lab Ltd](https://simulalab.org) that gives the Arabic site admin the possibility to use Levantine Arabic Month Names in WordPress dates instead of (or in combination with) Modern Standard Arabic month names. It also allows for using Arabic-Indic numerals instead of Arabic numerals in WordPress dates and time.
+A WordPress plugin developed by [Simula Lab Ltd](https://simulalab.org) that gives the admin(s) of an Arabic site the possibility to use Levantine Arabic Month Names in WordPress dates instead of (or in combination with) Modern Standard Arabic month names. It also allows for using Arabic-Indic numerals instead of Arabic numerals in WordPress dates and time.
 
 It allows the site to:
 
@@ -22,6 +22,8 @@ It allows the site to:
 - use a mix of Levantine and Standard Arabic months names (شباط/فبراير, آذار/مارس) or (فبراير/شباط, مارس/آذار) instead of Modern Standard Arabic months names.
 
 After installing and activating the plugin, navigate to the "Settings" menu in the Admin Dashboard and select "Levantine Dates".
+
+The plugin has no effect on non-Arabic sites.
 
 
 == Screenshots ==

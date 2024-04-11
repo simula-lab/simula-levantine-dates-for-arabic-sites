@@ -21,6 +21,8 @@ It allows the site to:
 - use Levantine Arabic months names instead (شباط, آذار) of Modern Standard Arabic months names (فبراير, مارس) in WordPress dates.
 - use a mix of Levantine and Standard Arabic months names (شباط/فبراير, آذار/مارس) or (فبراير/شباط, مارس/آذار) instead of Modern Standard Arabic months names.
 
+After installing and activating the plugin, navigate to the "Settings" menu in the Admin Dashboard and select "Levantine Dates".
+
 
 == Screenshots ==
 

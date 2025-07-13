@@ -1,0 +1,8 @@
+.git
+.gitignore
+LICENSE
+README.md
+checklist-before-review.txt
+languages
+readme.txt
+simula-levantine-dates.php

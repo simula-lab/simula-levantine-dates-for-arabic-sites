@@ -2,9 +2,9 @@
 Contributors: simulalab 
 Tags: arabic, numerals, levantine, تاريخ ,أرقام
 Requires at least: 4.6
-Tested up to: 6.5
+Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.1.1
+Stable tag: 1.1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://simulalab.org

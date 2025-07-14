@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/simula-lab/simula-levantine-dates-for-arabic-sites
 
  * Description: Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Simula
  * Author URI: https://simulalab.org/
  * License: GPL2
@@ -17,6 +17,12 @@
 if ( !defined( 'WPINC' ) ) {
 	die;
 }
+
+// Opt into Consent API
+add_action( 'plugins_loaded', function() {
+    $plugin = plugin_basename( __FILE__ );
+    add_filter( "wp_consent_api_registered_{$plugin}", '__return_true' );
+} );
 
 // Define the arrays of month names as constants
 const SIMULA_LEVANTINE_DATES_MODERN_STANDARD_ARABIC_MONTH_NAMES = array(

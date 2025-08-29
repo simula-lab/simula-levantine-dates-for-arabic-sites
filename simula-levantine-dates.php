@@ -2,12 +2,14 @@
 /**
  * Plugin Name: Simula Levantine Dates for Arabic Sites
  * Plugin URI: https://github.com/simula-lab/simula-levantine-dates-for-arabic-sites
-
  * Description: Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent
  * Version: 1.1.0
  * Author: Simula
+ * Requires at least: 4.6
+ * Requires PHP: 7.0 
  * Author URI: https://simulalab.org/
- * License: GPL2
+ * License: GPL v2
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: simula-levantine-dates-for-arabic-sites
  * Domain Path: /languages
  *

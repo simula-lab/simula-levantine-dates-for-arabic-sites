@@ -3,7 +3,7 @@
  * Plugin Name: Simula Levantine Dates for Arabic Sites
  * Plugin URI: https://github.com/simula-lab/simula-levantine-dates-for-arabic-sites
  * Description: Converts Arabic numerals in dates into Arabic-Indic numerals, and Modern Standard Arabic month names to Levantine equivalent
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Simula
  * Requires at least: 4.6
  * Requires PHP: 7.0 
@@ -83,7 +83,19 @@ function simula_levantine_dates_convert_msa_month_names_to_msa_levantine_month_n
  * @return string	A string consisting of the input string with Arabic numerals replaced with Arabic-Indic numerals
  */
 function simula_levantine_dates_convert_arabic_numerals_to_arabic_indic( $string ) {
-	$arabic_indic_numerals = array('۰', '۱', '۲', '۳', '٤', '۵', '٦', '۷', '۸', '۹', ',', '،');
+	$arabic_indic_numerals = array(
+        '٠', 
+        '١', 
+        '٢', 
+        '٣', 
+        '٤', 
+        '٥', 
+        '٦', 
+        '٧', 
+        '٨', 
+        '٩', 
+        ',', 
+        '،');
 	$arabic_numerals = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',');
 	return str_replace( $arabic_numerals, $arabic_indic_numerals, $string );
 }

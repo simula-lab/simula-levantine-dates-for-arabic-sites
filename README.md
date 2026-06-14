@@ -53,10 +53,11 @@ After selecting Levantine Arabic month names and Arabic-Indic numberals:
 
 ## Reporting bugs
 
-Please create an issue for the bug, and try to be thourough. 
+Please create an issue for the bug, and try to be thourough.
 If possible include screenshots, and other important details such as WordPress version, PHP version, etc.
 
 ## Contributing
+
 Contributions are welcome!
 
 When creating a pull request make sure to use the following template:
@@ -79,7 +80,7 @@ Checklist
 ## Upgrade on Wordpress.org Directory
 
 - update the plugin code
-- test your changes 
+- test your changes
 - update version number in readme.txt and meta data
 - git commit changes to this repository
 - use svn to checkout the SVN repository
@@ -87,4 +88,5 @@ Checklist
 - svn commit changes to plugins directory
 
 ## License
+
 The plugin was developed under the GPL-2.0 license: http://www.gnu.org/licenses/gpl-2.0.html.

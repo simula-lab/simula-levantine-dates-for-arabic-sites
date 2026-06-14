@@ -2,9 +2,9 @@
 Contributors: simulalab 
 Tags: arabic, numerals, levantine, تاريخ ,أرقام
 Requires at least: 4.6
-Tested up to: 6.8
+Tested up to: 7.0
 Requires PHP: 7.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://simulalab.org
@@ -32,6 +32,10 @@ The plugin has no effect on non-Arabic sites.
 2. ٍPublishing data/time using Levantine Arabic month names and Arabic-Indic numerals
 
 == Changelog ==
+
+= 1.1.1 =
+* Changed number 5 from '۵' (U+06F5) Persian, Sindhi and Urdu glyph to Arabic-Indic digit five '٥' (U+0665)
+* Tested the plugin with Wordpress 7.0
 
 = 1.1.0 =
 * The plugin now follows the Consent API Guidelines
